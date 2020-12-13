@@ -26,11 +26,10 @@ I created this script to generate Binance Futures watchlists for myself. I wante
 
 Watchlists are generated in the `generated` folder. These come in 2 varieties.
 
-    1. [Generic Symbols!](generated/generic_symbols) - Just an ordinary watchlist 
-    2. [Symbols for quotes on a Specific Exchange!](generated/exchange_embedded_symbols) - Bid/Ask/Volume specific to an Exchange
+1. [Generic Symbols!](generated/generic_symbols) - Just an ordinary watchlist 
+2. [Symbols for quotes on a Specific Exchange!](generated/exchange_embedded_symbols) - Bid/Ask/Volume specific to an Exchange
 
-
-    ![Exchange Info](assets/Watchlist-Name-and-Exchange-Data.png)
+![Exchange Info](assets/Watchlist-Name-and-Exchange-Data.png)
 
 ## Caveats
 - Chances are you want to be using Trading View's Crypto Screener tools in the first place...
