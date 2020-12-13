@@ -40,5 +40,11 @@ Watchlists are generated in the `generated` folder. These come in 2 varieties.
 - look in the `generated/generic` folder for a watchlist that contains the symbols supported by your exchange, but may not link directly to your specific exchange data - in most cases, I think just knowing the symbol paris should be sufficient. If not, well, why are you using TV then?
 - This software is shipped with no guarentee, I will not be responsible if you miss any newly listed coins or make dumb trading
 
-# TradingView
-- [Sign-up for a TradingView Account Here!](https://www.tradingview.com/gopro/?share_your_love=b6d1016fdeb149be865b678a8ac935)
+# Thank you!
+
+Thanks for visiting this project, you can support this development in one of 2 ways:
+1. [Sign-up for a TradingView Account Here!](https://www.tradingview.com/gopro/?share_your_love=b6d1016fdeb149be865b678a8ac935)
+2. Send a Tip
+    - ETH 0xF4eE6Ac4245AB693e427507A1b8fAf5022fd4021
+    - BTC
+    - LTC 
