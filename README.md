@@ -1,14 +1,18 @@
 # TV-Watchlist-Generator
+
 > so you never miss a new listing
 
 ## Why
+
 I created this script to generate Binance Futures watchlists for myself. I wanted to know every symbol/pair that existed. Well, that was nice, but within a week, there were already new symbols supported by my exchange that I didn't have on my watchlist.
 
 ## How to use this project
+
 1. You can save watchlists directly from this project to your local hard drive. I plan to use the CICD tools on this platform to generate the watchlists daily
 2. You can clone this repository and generate watchlists locallly for exchanges as you wish.
 
 ## Importing into Binance
+
 1. Click on the name of the current watchlist to reveal the menu
 2. Choose `Import list...`
 
@@ -16,11 +20,13 @@ I created this script to generate Binance Futures watchlists for myself. I wante
 ![How to Import](assets/Trading-View-Import-Watchlist.-From-File.png)
 
 ## Exchange Embedded
+
 Watchlists are generated in the `generated` folder. These come in 2 varieties.
+
     1. [Generic Symbols!](generated/generic_symbols) - Just an ordinary watchlist 
     2. [Symbols for quotes on a Specific Exchange!](generated/exchange_embedded_symbols) - Bid/Ask/Volume specific to an Exchange
 
-    
+
     ![Exchange Info](assets/Watchlist-Name-and-Exchange-Data.png)
 
 ## Caveats
