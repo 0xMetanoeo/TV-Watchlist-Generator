@@ -1,4 +1,6 @@
-# TV-Watchlist-Generator
+# TradingView Watchlist Generator
+
+![TradingView Logo](https://www.tradingview.com/static/images/logo-151x151.png)
 
 > so you never miss a new listing
 
@@ -8,7 +10,7 @@ I created this script to generate Binance Futures watchlists for myself. I wante
 
 ## How to use this project
 
-1. You can save watchlists directly from this project to your local hard drive. I plan to use the CICD tools on this platform to generate the watchlists daily
+1. You can [save watchlists!](generated/exchange_embedded_symbols/binance_spot.txt) directly from this project to your local hard drive. I plan to use the CICD tools on this platform to generate the watchlists daily
 2. You can clone this repository and generate watchlists locallly for exchanges as you wish.
 
 ## Importing into Binance
@@ -31,8 +33,12 @@ Watchlists are generated in the `generated` folder. These come in 2 varieties.
 
 ## Caveats
 - Chances are you want to be using Trading View's Crypto Screener tools in the first place...
-- There are likely bugs. If so, please raise an issue, and/or submit a pull request.
+- Chances are someone has already done this, but better. I didn't look to see.
+- There may be bugs. If so, please raise an issue, and/or submit a pull request.
 - I only use and test Binance Spot and Binance Futures.
 - This likely generates watchlists for which TradingView doesn't directly Support. For example, if you wanted to see a quote for `BTC/USDT` specifically for binance, that watchlist entry would look like `BINANCE:BTCUSDT`. This works because TradingView gets feeds from Binance and knows exactly what the volume and price data is for that specific pairing.
 - look in the `generated/generic` folder for a watchlist that contains the symbols supported by your exchange, but may not link directly to your specific exchange data - in most cases, I think just knowing the symbol paris should be sufficient. If not, well, why are you using TV then?
 - This software is shipped with no guarentee, I will not be responsible if you miss any newly listed coins or make dumb trading
+
+# TradingView
+- [Sign-up for a TradingView Account Here!](https://www.tradingview.com/gopro/?share_your_love=b6d1016fdeb149be865b678a8ac935)
