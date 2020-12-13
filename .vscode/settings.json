@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "~/code/crypto_projects/0xMetaNoeo/TV-Watchlist-Generator/env/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
