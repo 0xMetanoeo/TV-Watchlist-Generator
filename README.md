@@ -1,8 +1,9 @@
 # TradingView Watchlist Generator
 
+> so you never miss a new listing
+
 ![TradingView Logo](https://www.tradingview.com/static/images/logo-151x151.png)
 
-> so you never miss a new listing
 
 ## Why
 
