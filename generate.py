@@ -13,7 +13,7 @@ exchange_types = ['spot','future']
 
 def write_watchlist(exchange, ex_type):
     print("fetching for ", exchange)
-    tickers = get_active_tickers(exchange, ex_type)    
+    tickers = get_active_tickers(exchange, ex_type)
     if tickers:
         file_name = f"{exchange}_{ex_type}.txt"
         out_file_with_ex = Path(output_path,'exchange_embedded_symbols', file_name)
@@ -43,7 +43,6 @@ def get_active_tickers(name,ex_type):
         }).load_markets()
         for key in markets:
             if markets[key]['active'] == True:
-                record = "" # needed? idk..
                 clean_ticker = key.replace(r'/','')
                 active_symbols.append(clean_ticker)
         return (active_symbols)
