@@ -3,13 +3,15 @@ import sys
 import ccxt
 from pathlib import Path
 import pprint
+import time
+import pickle
 pp = pprint.PrettyPrinter(indent=4)
 
 # Example
 # BINANCE:BTCUSDTPERP
 output_path = './generated/'
 exchange_types = ['spot','future']
-
+exchange_types = ['spot'] # debugging on Jan 9th, don't commit like this!!
 
 def write_watchlist(exchange, ex_type):
     print("fetching for ", exchange)
@@ -41,6 +43,8 @@ def get_active_tickers(name,ex_type):
                 'defaultType': ex_type,
             }
         }).load_markets()
+        with open('./pickle/' + name + '.pickle', 'wb') as handle:
+            pickle.dump(markets, handle, protocol=pickle.HIGHEST_PROTOCOL)
         for key in markets:
             if markets[key]['active'] == True:
                 clean_ticker = key.replace(r'/','')
@@ -52,4 +56,5 @@ def get_active_tickers(name,ex_type):
 
 for exchange_type in exchange_types:
     for exchange in ccxt.exchanges:
+        time.sleep(20) 
         write_watchlist(exchange,exchange_type)
