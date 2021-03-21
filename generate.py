@@ -56,5 +56,6 @@ def get_active_tickers(name,ex_type):
 
 for exchange_type in exchange_types:
     for exchange in ccxt.exchanges:
-        time.sleep(20) 
-        write_watchlist(exchange,exchange_type)
+        if exchange == 'kucoin':
+            time.sleep(20) 
+            write_watchlist(exchange,exchange_type)
