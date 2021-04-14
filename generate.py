@@ -38,7 +38,7 @@ def get_active_tickers(name,ex_type):
     # print(f"trying for {name}")
     try:
         markets = exchange({
-            'enableRateLimit': True,  # https://github.com/ccxt/ccxt/wiki/Manual#rate-limit
+            'enableRateLimit': False,  # https://github.com/ccxt/ccxt/wiki/Manual#rate-limit
             'options': {
                 'defaultType': ex_type,
             }
@@ -56,6 +56,6 @@ def get_active_tickers(name,ex_type):
 
 for exchange_type in exchange_types:
     for exchange in ccxt.exchanges:
-        if exchange == 'kucoin':
-            time.sleep(20) 
-            write_watchlist(exchange,exchange_type)
+        # if exchange == 'kucoin':
+        #     time.sleep(20) 
+        write_watchlist(exchange,exchange_type)
