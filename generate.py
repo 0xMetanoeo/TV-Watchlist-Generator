@@ -11,7 +11,7 @@ pp = pprint.PrettyPrinter(indent=4)
 # BINANCE:BTCUSDTPERP
 output_path = './generated/'
 exchange_types = ['spot','future']
-exchange_types = ['spot'] # debugging on Jan 9th, don't commit like this!!
+# exchange_types = ['spot'] # debugging on Jan 9th, don't commit like this!!
 
 def write_watchlist(exchange, ex_type):
     print("fetching for ", exchange)
@@ -56,6 +56,6 @@ def get_active_tickers(name,ex_type):
 
 for exchange_type in exchange_types:
     for exchange in ccxt.exchanges:
-        # if exchange == 'kucoin':
-        #     time.sleep(20) 
-        write_watchlist(exchange,exchange_type)
+        if exchange == 'binance':
+            #time.sleep(20) 
+            write_watchlist(exchange,exchange_type)
