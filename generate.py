@@ -38,7 +38,7 @@ def get_active_tickers(name,ex_type):
     # print(f"trying for {name}")
     try:
         markets = exchange({
-            'enableRateLimit': False,  # https://github.com/ccxt/ccxt/wiki/Manual#rate-limit
+            'enableRateLimit': True,  # https://github.com/ccxt/ccxt/wiki/Manual#rate-limit
             'options': {
                 'defaultType': ex_type,
             }
