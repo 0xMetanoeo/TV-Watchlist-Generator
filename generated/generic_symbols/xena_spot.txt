@@ -161,6 +161,7 @@ COMPUSD:USDC
 .FILUSD_Premium_Rate
 .FILUSD_Premium_Rate_TWAP
 .FILUSD_TWAP
+.FidelityMath
 .Gain
 .Growth
 .LINKUSD
@@ -212,6 +213,7 @@ COMPUSD:USDC
 .OMGUSD_Premium_Rate_TWAP
 .OMGUSD_TWAP
 .OpenInterest
+.QuantTrends
 .RiskAdjustment_IR
 .Rocket
 .SOLUSD
@@ -242,6 +244,7 @@ COMPUSD:USDC
 .USDTUSDC
 .USDTUSD_Fixing
 .USDTUSD_KRAKEN
+.UltimateAlgo
 .XBTUSD_3M_240622
 .XBTUSD_3M_240622_FP
 .XBTUSD_3M_240622_HIGHLIMIT
